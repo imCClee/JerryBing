@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+	{% block head %}<title>IoT Binging</title>{% endblock %}
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="assets/img/shortcut_IOT.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/util.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/binding.css">
+</head>
+
+<body id="binding-Form">
+{% block body %}
+		<div class="limiter">
+		<div class="container-binding">
+			<div class="wrap-binding">
+				<div class="formtitle-bg">
+					<span class="formtitle">
+						IoT Device Binding
+					</span>
+				</div class="card">
+				<form class="forminput validate-form" action="/device_binding" method="POST" name="binding">
+					<div class="h5">
+						HI!Sam
+					</div>
+					<div class="wrap-input m-b-26">
+						<input class="input" type="text" name="device_name" id="device_name" placeholder="Device name" value="Camera001" disabled>
+					    <span class=""><i class="fa fa-tablet"></i>
+					</div>
+
+					<div class="wrap-input m-b-18">
+						<input class="input" type="text" name="regis_code" id="regis_code" placeholder="Serial number" value="123456780000" disabled>
+					    <span class=""><i class="fa fa-barcode"></i>
+
+					</div>
+
+					<div class="flex-sb-m w-full p-b-30">
+					 <div class="container-binding-form-btn">
+						<button class="binding-form-btn" type="submit" onclick="">
+							Back To Home
+						</button>
+					</div>
+			     </div>
+					<div class="message">
+						The device has been bound！
+					</div>
+				</form>
+		       	<div class="small footer w-100">
+					© 2021 Designed by <a href="#">Vattensoft</a> Co., Ltd.
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+{% endblock %}
+	
+	<script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+</html>
