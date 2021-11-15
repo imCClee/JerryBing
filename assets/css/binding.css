@@ -331,7 +331,7 @@ input.input {
   position: absolute;
   color: #e93838;
   font-size: 15px;
-  top: 63%;
+  top: 63px;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -423,8 +423,8 @@ input.input {
 .wrap-input span i.fa {
     font-size: 18px;
     position: absolute;
-    top:52px;
-    left: 12px;
+    top: 54px;
+    left: 14px;
 }
 
 
