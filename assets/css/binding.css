@@ -12,7 +12,6 @@
 }
 
 body, html {
-height: 100%;
  line-height: 1.15;
  font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -22,6 +21,7 @@ height: 100%;
   line-height: 1.5;
   color: #858796;
   background-color: #cbdae7;
+  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
 }
 
 hr {
@@ -118,12 +118,11 @@ button:hover {
   justify-content: center;
   align-items: center;
   padding: 15px;
-  background-color: #cbdae7;
   }
 
 
 .wrap-binding {
-  width: 670px;
+  width: 600px;
   background: #fff;
   border-radius: 1.4rem;
   overflow: hidden;
@@ -182,9 +181,6 @@ h5,.h5{
   height: 100%;
   top: 0;
   left: 0;
-  /*background-image: linear-gradient(90deg, #0061ae40 0, #0f64a7 100%) !important;
-    background-color: #124c8b69;*/
-
   background-color: #1389ddbf;
 }
 
@@ -217,14 +213,17 @@ h5,.h5{
 
 }
 
+span.label-input{
+    font-size: 14px;
+    color: #1d1a34;
+    line-height: 1.5;
+    margin:10px;
+    display: block;
+}
+
 input.input {
   height: 45px;
 }
-
-.forminput input:disabled{
-  background: #d2d4d5;
-}
-
 
 .container-binding-form-btn {
   width: 100%;
@@ -332,7 +331,7 @@ input.input {
   position: absolute;
   color: #e93838;
   font-size: 15px;
-  top: 40%;
+  top: 63%;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -364,14 +363,22 @@ input.input {
     height: calc(1.5em + 0.75rem + 2px);
     font-size: 0.96rem;
     font-weight: 400;
-    color: #6e707e;
+    color: #afb0b6;
     background-clip: padding-box;
     border: 1px solid #ebeef1;
     border-radius: 99rem;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     background: #FFF;
-
 }
+
+.forminput input:disabled, .forminput input[readonly] {
+    background-color: #eaecf4;
+    opacity: 1;
+    color: #afb0b6;
+    -webkit-text-fill-color: rgba(0, 0, 0, .6);
+    -webkit-opacity: .6;
+}
+
 
 .forminput {
   width: 100%;
@@ -416,8 +423,8 @@ input.input {
 .wrap-input span i.fa {
     font-size: 18px;
     position: absolute;
-    top:12px;
-    left: 17px;
+    top:52px;
+    left: 12px;
 }
 
 
